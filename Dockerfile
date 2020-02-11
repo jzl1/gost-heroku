@@ -10,5 +10,5 @@ RUN apk add --no-cache curl \
 WORKDIR /gost
 EXPOSE ${TLS_PORT} $PORT
 
-CMD exec /gost/gost -L=ws://jzl:$PASSWORD@:80
+CMD exec /gost/gost -L=ws://jzl:$PASSWORD@:$PORT
 
