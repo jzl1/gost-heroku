@@ -10,4 +10,4 @@ RUN apk add --no-cache curl \
 WORKDIR /gost
 EXPOSE ${TLS_PORT} $PORT
 
-CMD exec /gost/gost -L=ws://jzl:$PASSWORD@:$PORT?path=/heroku
+CMD exec /gost/gost -L=wss://jzl:$PASSWORD@:$PORT?path=/heroku
